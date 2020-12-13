@@ -1,0 +1,47 @@
+* > body {
+    color: white;
+    background-color: black;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav {
+    background-color: rgb(12, 63, 95);
+    border-bottom: 2px solid white;
+    display: flex;
+  }
+
+  .navigation-container {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+  }
+
+  .nav-button {
+    color: black;
+    border: none;
+    background-color: #0c3f5f;
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    margin: 7% 10% 6% 5%;
+  }
+
+  .nav-link {
+    text-decoration: none !important;
+    color: black;
+  }
+
+  .nav-link:active {
+    color: white;
+  }
+
+  .nav-button:hover, .nav-link:hover {
+    color: rgb(255, 153, 0);
+  }
+
+
+

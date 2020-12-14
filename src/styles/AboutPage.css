@@ -3,67 +3,29 @@
     margin-bottom: 5%;
     font-size: 5rem;
     text-align: center;
-    margin-right: 1.5%;
     font-family: 'Montserrat', sans-serif;
-  }
-
-  p {
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 2rem;
   }
 
   .interests-container {
     margin-left: 25%;
+    margin-bottom: 2%;
     font-size: 2rem;
   }
 
+  .interest-item {
+    margin-bottom: 2%;
+  }
+
   .info {
+    font-size: 2rem;
     margin-bottom: 10%;
   }
 
-  @media (min-width: 484px) and (max-width: 786px) {
-    .name {
-      font-size: 5rem;
-      padding-top: 10vh;
-    }
-
-    .greeting {
-      font-size: 3rem;
-    }
-
-    .interests {
-      margin-left: 25%;
-      font-size: 2rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-  } 
-  
-  @media (max-width: 484px) {
-    .name {
-      font-size: 3rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    .greeting {
-      font-size: 3rem;
-    }
-
-    .interests {
-      margin-left: 25%;
-      font-size: 1.5rem;
-    }
-    
-    p {
-      font-size: 1.5rem;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-    
+  .intro, .middle, .closing {
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 2%;
   }
+
+  

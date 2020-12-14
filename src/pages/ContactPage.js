@@ -1,9 +1,14 @@
-import React, {Fragment} from "react";
+import React, {Fragment} from 'react';
+import ContactForm from '../components/ContactForm.js'
+import '../styles/ContactPage.css'
 
 const ContactPage = () => {
     return (
         <Fragment>
-            <h1>Contact form</h1>
+            <div className="container">
+                <ContactForm />
+            </div>
+        
         </Fragment>
     )
 }

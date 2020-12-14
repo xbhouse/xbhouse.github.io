@@ -35,12 +35,12 @@
     color: black;
   }
 
-  .nav-link:active {
-    color: white;
-  }
-
   .nav-button:hover, .nav-link:hover {
     color: rgb(255, 153, 0);
+  }
+
+  .nav-button:focus {
+    outline: 0;
   }
 
 

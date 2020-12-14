@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import { BrowserRouter as Router, NavLink, useHistory } from "react-router-dom"; 
+import { BrowserRouter as Router, NavLink } from "react-router-dom"; 
 import "../styles/Navigation.css"
 
 const Navigation = () => {
@@ -36,10 +36,22 @@ const Navigation = () => {
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="nav-button" title="GitHub">github</button>
+                        <a href="https://github.com/xbhouse">
+                            <button 
+                                className="nav-button" 
+                                title="GitHub" 
+                                type="button"
+                            >github</button>
+                        </a>
                     </li>
                     <li className="nav-item">
-                        <button className="nav-button" title="LinkedIn">linkedin</button>
+                        <a href="https://linkedin.com/in/bryttaniehouse">
+                            <button 
+                                className="nav-button" 
+                                title="LinkedIn" 
+                                type="button"
+                            >linkedin</button>
+                        </a>
                     </li>
                     <li className="nav-item">
                         <button className="nav-button" title="Contact me">

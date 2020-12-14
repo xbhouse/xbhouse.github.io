@@ -1,0 +1,48 @@
+.greeting { 
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.email-me {
+    margin-bottom: 7%;
+    font-size: 3rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-lrg {
+    width: 30%;
+}
+
+.btn-primary {
+    background-color: rgb(16, 125, 92);
+    border-color: black;
+}
+
+.btn-secondary {
+    background-color: rgb(202, 199, 202);
+    color: black;
+    border-color: black;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: orange;
+}
+
+.btn-primary:focus, .btn-secondary:focus {
+    outline: 0 !important;
+}
+
+.button-container {
+    margin-bottom: 15%;
+}

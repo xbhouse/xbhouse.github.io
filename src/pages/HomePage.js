@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import '../styles/HomePage.css'
+import '../styles/pages/HomePage.css'
 
 const HomePage = () => {
     return (

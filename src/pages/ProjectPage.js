@@ -31,8 +31,8 @@ const ProjectPage = () => {
                 images={capstoneImages}
                 size="60%"
                 caption="A Jira plugin to sync items between Jira and Jama Connect"
-                description="This is the final product for my Software Engineering Capstone course. The plugin links and syncs items between Jira and Jama Connect so the
-                user does not have to update them in both places."
+                description="This is the final product for my Software Engineering Capstone course. The plugin links and syncs items (such as user stories or requirements) between Jira and Jama Connect so the
+                user does not have to update them in both applications."
                 role="My role in this project was the UX/UI design, frontend linking and sync interval setup, backend syncing and sync interval setup, and Jira integration."
                 repo="https://github.com/CapstoneBitsPlease"
             ></Project>

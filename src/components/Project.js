@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import '../styles/Project.css'
+import '../styles/components/Project.css'
 
 const Project = (props) => {
 

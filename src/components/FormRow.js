@@ -20,7 +20,6 @@ const FormRow = (props) => {
                     rows="3" 
                     maxlength="12345"></textarea>
             }
-            
         </div>
     )
 }

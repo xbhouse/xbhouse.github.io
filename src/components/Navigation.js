@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import { BrowserRouter as Router, NavLink } from "react-router-dom"; 
-import "../styles/Navigation.css"
+import "../styles/components/Navigation.css"
 
 const Navigation = () => {
 
@@ -36,16 +36,18 @@ const Navigation = () => {
                         </button>
                     </li>
                     <li className="nav-item">
-                        <a href="https://github.com/xbhouse">
+                        <a href="https://github.com/xbhouse" target="_blank" rel="noopener noreferrer">
                             <button 
                                 className="nav-button" 
                                 title="GitHub" 
                                 type="button"
+                                target="_blank" 
+                                rel="noopener noreferrer"
                             >github</button>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="https://linkedin.com/in/bryttaniehouse">
+                        <a href="https://linkedin.com/in/bryttaniehouse" target="_blank" rel="noopener noreferrer">
                             <button 
                                 className="nav-button" 
                                 title="LinkedIn" 

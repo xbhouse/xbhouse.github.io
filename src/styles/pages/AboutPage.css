@@ -19,6 +19,7 @@
   .info {
     font-size: 2rem;
     margin-bottom: 10%;
+    margin-top: 0;
   }
 
   .intro, .middle, .closing {

@@ -3,11 +3,13 @@ import FormRow from '../components/FormRow.js'
 
 const ContactForm = () => {
     const handleSubmit = () => {
-        
+        // POST form data
     }
 
     const handleReset = (event) => {
-        event.target.value = "";
+        document.getElementById("name").value="";
+        document.getElementById("email").value="";
+        event.target.value="";
     }
 
     return (

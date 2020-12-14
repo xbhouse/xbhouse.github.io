@@ -1,5 +1,6 @@
 import React, {Fragment} from "react";
 import Project from '../components/Project.js';
+import ScrollToTop from "../components/ScrollToTop.js";
 
 const ProjectPage = () => {
 

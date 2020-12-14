@@ -6,17 +6,21 @@ const FormRow = (props) => {
             <label for={props.name.toLowerCase()}>{props.name} *</label>
             {props.input === "input" && 
                 <input
-                    type={props.input}
-                    class="form-control ml-3 mr-3"
+                    type="text"
+                    className="form-control ml-3 mr-3"
                     id={props.name.toLowerCase()}
+                    onChange={(event)=> props.setState(event.target.value)}
+                    value={props.state}
                     required
                 />
             }
             {props.input === "textarea" && 
                 <textarea 
-                    class="form-control ml-8 mr-3" 
-                    type={props.name.toLowerCase()}
+                    className="form-control ml-8 mr-3" 
+                    type="text"
                     id={props.name.toLowerCase()}
+                    onChange={(event)=> props.setState(event.target.value)}
+                    value={props.state}
                     rows="3" 
                     maxlength="12345"></textarea>
             }

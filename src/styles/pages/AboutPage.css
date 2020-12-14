@@ -4,6 +4,7 @@
     font-size: 5rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
 
   .interests-container {
@@ -20,6 +21,7 @@
     font-size: 2rem;
     margin-bottom: 10%;
     margin-top: 0;
+    color: rgb(245, 243, 243);
   }
 
   .intro, .middle, .closing {

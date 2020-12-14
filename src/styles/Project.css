@@ -1,0 +1,50 @@
+.project-title {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: white;
+    font-weight: bold;
+    text-underline-position: under;
+    font-size: 4rem;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    color: rgb(250, 209, 95);
+}
+
+.description, .role {
+    font-size: 1.25em;
+    text-align: left; 
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.link-container {
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom: 1px solid white;
+}
+
+.link-to-repo {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    font-size: 2rem;
+    text-decoration: none !important; 
+    color: rgb(171, 118, 221);
+}
+
+.link-to-repo:hover {
+    color: rgb(255, 153, 0);
+}
+
+.project-image {
+    margin-bottom: 2%;
+}

@@ -10,7 +10,7 @@ const ContactForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setButtonText("Sending message..");
+        setButtonText("Sending message...");
         
         const data = {
             name,
@@ -73,7 +73,7 @@ const ContactForm = (props) => {
                         type="submit" 
                         className="btn btn-primary btn-lrg" 
                         onClick={handleSubmit} 
-                    >Submit</button>
+                    >{buttonText}</button>
                     <button 
                         type="reset" 
                         className="btn btn-secondary btn-lrg" 

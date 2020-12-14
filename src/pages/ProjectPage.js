@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
 import Project from '../components/Project.js';
-import ScrollToTop from "../components/ScrollToTop.js";
 
 const ProjectPage = () => {
 
@@ -32,9 +31,10 @@ const ProjectPage = () => {
                 images={capstoneImages}
                 size="60%"
                 caption="A Jira plugin to sync items between Jira and Jama Connect"
-                description="This is the final product for my Software Engineering Capstone course. The plugin links and syncs items (such as user stories or requirements) between Jira and Jama Connect so the
-                user does not have to update them in both applications."
-                role="My role in this project was the UX/UI design, frontend linking and sync interval setup, backend syncing and sync interval setup, and Jira integration."
+                description="This is the final product for my Software Engineering Capstone course. The plugin links and syncs items (such as user 
+                    stories or requirements) between Jira and Jama Connect so the user does not have to update them in both applications."
+                role="My role in this project was the UX/UI design, frontend linking and sync interval setup, backend syncing and sync interval setup, 
+                    and Jira integration."
                 repo="https://github.com/CapstoneBitsPlease"
             ></Project>
 
@@ -42,9 +42,9 @@ const ProjectPage = () => {
                 title="ClimbIt"
                 images={climbItImages}
                 size="60%"
-                caption="A web application that allows the user to search for hikes in any location and provides
-                them with a map, directions, and weather forecast"
-                description="ClimbIt was the final project for my Full-Stack Web Development course. Using various REST APIs, this application provides a user-friendly way to plan a hike in any location."
+                caption="A web application that allows the user to search for hikes in any location and provides them with a map, directions, and weather forecast"
+                description="ClimbIt was the final project for my Full-Stack Web Development course. Using various REST APIs, this application provides a 
+                    user-friendly way to plan a hike in any location."
                 role="My role in this project was the UX/UI design and frontend/middle-end development."
                 repo="https://github.com/xbhouse/ClimbIt"
             ></Project>
@@ -66,8 +66,8 @@ const ProjectPage = () => {
                 images={spaceHuntImages}
                 size="30%"
                 caption="An inventive game played in the web browser"
-                description="This was the final project for my Software Engineering class. Dr. Warren Harrison created the game plot, which centers around the objective of locating a secret recipe in the shortest amount of time possible, while
-                    not running out of supplies or energy and avoiding various obstacles."
+                description="This was the final project for my Software Engineering class. Dr. Warren Harrison created the game plot, which centers around the objective 
+                    of locating a secret recipe in the shortest amount of time possible, while not running out of supplies or energy and avoiding various obstacles."
                 role="I worked on implementing the local storage so the user can save and load their game."
                 repo="https://github.com/xbhouse/spacehunt-best-team"
             ></Project>

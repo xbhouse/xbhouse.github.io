@@ -8,7 +8,6 @@ const ContactPage = () => {
             <div className="container">
                 <ContactForm />
             </div>
-        
         </Fragment>
     )
 }

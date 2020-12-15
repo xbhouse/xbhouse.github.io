@@ -1,0 +1,24 @@
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.project-list-container {
+    text-align: center;
+}
+
+.project-list {
+    list-style-type: none;
+    margin-right: 3%;
+}
+
+.project-list-item {
+    margin: 2%;
+}
+
+.project-button {
+    background-color: black;
+    outline: 0 !important;
+    border: none;
+    font-size: 3rem;
+}

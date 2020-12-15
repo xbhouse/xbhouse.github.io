@@ -5,7 +5,7 @@ import '../styles/pages/ProjectPage.css';
 const ProjectPage = () => {
     return (
         <Fragment>
-            <h1 className="page-title">Here are some of my most recent projects.</h1>
+            <h1 className="page-title">here are some of my recent projects</h1>
             <h2 className="page-subtitle">(click one to view more info)</h2>
             <ProjectList />
         </Fragment>

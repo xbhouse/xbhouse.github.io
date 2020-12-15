@@ -1,10 +1,16 @@
   .greeting {
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: 'Nothing You Could Do', cursive;
+  }
+
+  .info {
+    font-size: 1.25rem;
+    margin-bottom: 10%;
+    margin-top: 0;
+    color: rgb(245, 243, 243);
   }
 
   .interests-container {
@@ -17,11 +23,24 @@
     margin-bottom: 2%;
   }
 
-  .info {
-    font-size: 1.25rem;
-    margin-bottom: 10%;
-    margin-top: 0;
-    color: rgb(245, 243, 243);
+  #interest-item1:hover {
+    font-weight: bold;
+    color: rgb(216, 144, 216)
+  }
+
+  #interest-item2:hover {
+    font-weight: bold;
+    color: rgb(179, 97, 179)
+  }
+
+  #interest-item3:hover {
+    font-weight: bold;
+    color: rgb(126, 38, 126)
+  }
+
+  #interest-item4:hover {
+    font-weight: bold;
+    color: rgb(91, 13, 91)
   }
 
   .intro, .middle, .closing {

@@ -9,7 +9,7 @@ const HomePage = () => {
             <div className="image-container">
                 <img 
                     className="portrait" 
-                    src="/images/commencement.jpg" 
+                    src="/images/Misc/commencement.jpg" 
                     alt="Self portrait">
                 </img>
             </div>

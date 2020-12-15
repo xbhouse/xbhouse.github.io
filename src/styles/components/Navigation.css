@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-  background-color: rgb(12, 63, 95);
+  background-color: rgb(8, 92, 143);
   border-bottom: 2px solid white;
   display: flex;
 }
@@ -22,8 +22,11 @@ nav {
 .nav-button {
   color: black;
   border: none;
-  background-color: #0c3f5f;
+  background-color: rgb(8, 92, 143);
   font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  position: relative;
 }
 
 .nav-item {
@@ -41,6 +44,22 @@ nav {
 
 .nav-button:focus {
   outline: 0;
+}
+
+.nav-button:after {    
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-button:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 /* Resize for medium screens */

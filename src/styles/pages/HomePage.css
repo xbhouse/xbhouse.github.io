@@ -3,9 +3,8 @@
     color: rgb(245, 243, 243);
     padding: 5% 10% 1% 10%;
     text-align: center; 
-    font-family: 'Marck Script', cursive;
-    font-family: 'Homemade Apple', cursive;
-  }
+    font-family: 'Nothing You Could Do', cursive;
+}
 
 .title {
     font-size: 2rem;
@@ -22,6 +21,14 @@
     width: 25%;
     border-radius: 100%;
     border: 2px solid white;
+    filter: grayscale(100%);
+}
+
+.portrait:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: grayscale(0%);
+    transition: ease 3s;
 }
 
 /* Resize for medium screens */

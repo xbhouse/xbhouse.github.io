@@ -24,6 +24,10 @@ const ProjectList = () => {
                         path="spacehunt"
                         title="SpaceHunt"
                     />
+                    <ProjectListItem 
+                        path="home"
+                        title="This website :)"
+                    />
                 </ul>
             </div>
         </Fragment>

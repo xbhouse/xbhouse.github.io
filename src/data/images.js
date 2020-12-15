@@ -1,9 +1,6 @@
-export const capstoneImages = ["/images/Jama-Jira-Plugin/Capstone-authentication.png",
-                           "/images/Jama-Jira-Plugin/Capstone-select-item.png",
+export const capstoneImages = ["/images/Jama-Jira-Plugin/Capstone-select-item.png",
                            "/images/Jama-Jira-Plugin/Capstone-link-items.png",
-                           "/images/Jama-Jira-Plugin/Capstone-unlink.png",
-                           "/images/Jama-Jira-Plugin/Capstone-sync-settings.png",
-                           "/images/Jama-Jira-Plugin/Capstone-error-logs.png"];
+                           "/images/Jama-Jira-Plugin/Capstone-sync-settings.png"];
 
 export const climbItImages = ["/images/ClimbIt/ClimbIt-home.png", 
                         "/images/ClimbIt/ClimbIt-search-results.png", 

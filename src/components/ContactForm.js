@@ -10,7 +10,7 @@ const ContactForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if(event.target.value === "") {
+        if(name === "" || email === "" || message === "") {
             alert("Please enter your name, email, and a message.")
             return;
         }

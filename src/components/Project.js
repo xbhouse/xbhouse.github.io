@@ -1,7 +1,9 @@
 import React, {Fragment} from "react";
+import {BrowserRouter as Router, useHistory} from 'react-router-dom';
 import '../styles/components/Project.css'
 
 const Project = (props) => {
+    const history = useHistory();
 
     const images = props.images.map(image => {
         return (
@@ -28,11 +30,18 @@ const Project = (props) => {
             <p className="description">{props.description}</p>
             <p className="role">{props.role}</p>
             <div className="link-container">
+                <button 
+                    id="back-button" 
+                    className="back-button" 
+                    onClick={() => history.push('/projects')}
+                >{"<< go back to projects"}</button>
                 <a 
                     className="link-to-repo" 
                     title="Go to the repo" 
                     href={props.repo}
-                >{"go to repo >>"}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >{"go to GitHub repo >>"}
                 </a>
             </div>
         </Fragment>

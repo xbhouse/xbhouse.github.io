@@ -41,8 +41,19 @@
     color: rgb(171, 118, 221);
 }
 
-.link-to-repo:hover {
+.link-to-repo:hover, .back-button:hover {
     color: rgb(255, 153, 0);
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    margin-right: 10%;
+    font-size: 1.75rem;
+    color: rgb(171, 118, 221);
+    background-color: black;
+    border: none;
 }
 
 .project-image {

@@ -1,62 +1,31 @@
 import React, {Fragment} from 'react';
-import { BrowserRouter as Router, 
-    NavLink,
-    useRouteMatch 
-} from "react-router-dom"; 
+import ProjectListItem from './ProjectListItem';
 import '../styles/components/ProjectList.css'
 
 const ProjectList = () => {
 
-    let { path, url } = useRouteMatch();
-
     return (
         <Fragment>
-        <div className="project-list-container">
-            <h1 className="page-title">Select a project to view more info:</h1>
-
-            <ul className="project-list">
-
-                <li className="project-list-item">
-                    <button className="project-button">
-                        <NavLink 
-                            className="project-link"
-                            to={`${url}/jama-jira-plugin`}
-                        >Jama-Jira link plugin
-                        </NavLink>
-                    </button>
-                </li>
-
-                <li className="project-list-item">
-                    <button className="project-button">
-                        <NavLink 
-                            className="project-link"
-                            to={`${url}/climbit`}
-                        >ClimbIt
-                        </NavLink>
-                    </button>
-                </li>
-
-                <li className="project-list-item">
-                    <button className="project-button">
-                        <NavLink 
-                            className="project-link"
-                            to={`${url}/recall-tracker`}
-                        >Recall Tracker
-                        </NavLink>
-                    </button>
-                </li>
-
-                <li className="project-list-item">
-                    <button className="project-button">
-                        <NavLink 
-                            className="project-link"
-                            to={`${url}/spacehunt`}
-                        >SpaceHunt
-                        </NavLink>
-                    </button>
-                </li>
-            </ul>
-        </div>
+            <div className="project-list-container">
+                <ul className="project-list">
+                    <ProjectListItem 
+                        path="jama-jira-plugin"
+                        title="Jama-Jira link plugin"
+                    />
+                    <ProjectListItem 
+                        path="climbit"
+                        title="ClimbIt"
+                    />
+                    <ProjectListItem 
+                        path="recall-tracker"
+                        title="Recall Tracker"
+                    />
+                    <ProjectListItem 
+                        path="spacehunt"
+                        title="SpaceHunt"
+                    />
+                </ul>
+            </div>
         </Fragment>
         
     )

@@ -1,9 +1,14 @@
-import React from "react";
+import React, {Fragment} from "react";
 import ProjectList from '../components/ProjectList.js';
+import '../styles/pages/ProjectPage.css';
 
 const ProjectPage = () => {
     return (
-        <ProjectList />
+        <Fragment>
+            <h1 className="page-title">Here are some of my most recent projects.</h1>
+            <h2 className="page-subtitle">(click one to view more info)</h2>
+            <ProjectList />
+        </Fragment>
     )
 }
 

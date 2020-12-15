@@ -7,10 +7,6 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
-    color: orange;
-}
-
 input[type=text] {
     background-color: rgb(245, 243, 243);
 }

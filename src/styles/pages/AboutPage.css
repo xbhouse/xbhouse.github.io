@@ -23,26 +23,6 @@
     margin-bottom: 2%;
   }
 
-  #interest-item1:hover {
-    font-weight: bold;
-    color: rgb(216, 144, 216)
-  }
-
-  #interest-item2:hover {
-    font-weight: bold;
-    color: rgb(179, 97, 179)
-  }
-
-  #interest-item3:hover {
-    font-weight: bold;
-    color: rgb(126, 38, 126)
-  }
-
-  #interest-item4:hover {
-    font-weight: bold;
-    color: rgb(91, 13, 91)
-  }
-
   .intro, .middle, .closing {
     text-align: left;
     margin-right: 20%;

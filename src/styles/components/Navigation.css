@@ -7,6 +7,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a:hover {
+  color: rgb(162, 222, 237);
+}
+
 nav {
   background-color: rgb(8, 92, 143);
   border-bottom: 2px solid white;
@@ -36,10 +40,6 @@ nav {
 .nav-link {
   text-decoration: none !important;
   color: black;
-}
-
-.nav-button:hover {
-  color: rgb(255, 153, 0);
 }
 
 .nav-button:focus {

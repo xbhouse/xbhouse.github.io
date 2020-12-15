@@ -18,6 +18,11 @@
     font-size: 2rem;
 }
 
+.project-button:hover {
+    border: 1px solid white;
+    transition: 800ms;    
+}
+
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .project-button {

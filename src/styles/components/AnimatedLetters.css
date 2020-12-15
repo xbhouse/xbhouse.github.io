@@ -1,0 +1,6 @@
+h1 span span { 
+    color: purple; 
+}
+h1 span span:nth-child(2n) {
+    color: rgb(70, 70, 163); 
+}

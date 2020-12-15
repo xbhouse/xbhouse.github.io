@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import FormRow from '../components/FormRow.js'
 
-const ContactForm = (props) => {
+const ContactForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -10,8 +12,10 @@ const ContactForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const success = () => toast("Thank you for your message!");
+        const invalidInput = () => toast("Please enter your name, email, and a message.");
         if(name === "" || email === "" || message === "") {
-            alert("Please enter your name, email, and a message.")
+            invalidInput();
             return;
         }
         document.getElementById("spinner").style.visibility = "visible";
@@ -33,7 +37,8 @@ const ContactForm = (props) => {
             handleReset();
         }).catch(error => {
             console.log(error);
-            setTimeout(function() {alert("This has not been implemented yet :("); handleReset();}, 2000);
+            //setTimeout(function() {alert("This has not been implemented yet :("); handleReset();}, 2000);
+            setTimeout(function() {handleReset(); success();}, 2000);
         })
     }
 
@@ -88,6 +93,8 @@ const ContactForm = (props) => {
                     >Reset</button>
                 </div>
             </div>
+
+            <ToastContainer />
 
         </form>
     )

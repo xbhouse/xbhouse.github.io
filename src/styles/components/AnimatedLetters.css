@@ -1,6 +1,23 @@
 h1 span span { 
-    color: purple; 
+    color: rgb(194, 112, 194); 
+}
+h1 span span, h2 span span {
+    position: relative;
+    opacity: 0;
+    animation: move-text 0.75s forwards;
 }
 h1 span span:nth-child(2n) {
-    color: rgb(70, 70, 163); 
+    color: rgb(216, 183, 224); 
+}
+h1 span span:nth-child(3n) {
+     color: rgb(244, 213, 234); 
+}
+h1 span span:nth-child(7n) {
+    color: rgb(246, 248, 246); 
+}
+
+@keyframes move-text {
+    0% { bottom: -0.2em; opacity: 1; }
+    50% { bottom: 0.2em; }
+    100% { bottom: 0; opacity: 1; }
 }

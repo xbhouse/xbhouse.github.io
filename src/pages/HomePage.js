@@ -36,11 +36,11 @@ const HomePage = () => {
                 <AnimatedLetters
                     letters={name}
                 /></h1>
-            <h1 className="title">
+            <h2 className="title">
                 <AnimatedLetters
                     letters={title}
                 />
-            </h1>
+            </h2>
             <div className="image-container">
                 <button className="image-button" onClick={handleClick}>
                     <img    

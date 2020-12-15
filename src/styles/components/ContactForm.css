@@ -44,3 +44,22 @@ textarea {
 .button-container {
     margin-bottom: 15%;
 }
+
+/* Resize for medium screens */
+@media (max-width: 720px) {
+    .greeting {
+        font-size: 1.5rem;
+    }
+    .email-me {
+        font-size: 1.25rem;
+    }
+    .row-label {
+        font-size: .75rem;
+    }
+  }
+  
+  /* Resize for small screens */
+  @media (max-width: 486px) {
+    
+  
+  }

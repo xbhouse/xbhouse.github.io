@@ -10,6 +10,10 @@ const ContactForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        if(event.target.value === "") {
+            alert("Please enter your name, email, and a message.")
+            return;
+        }
         document.getElementById("spinner").style.visibility = "visible";
         setButtonText("Sending message...");
         
@@ -19,8 +23,6 @@ const ContactForm = (props) => {
             message
         };
 
-        console.log(data);
-
         axios({
             method: "POST",
             url: "http://127.0.0.1:5000/send_message",
@@ -28,12 +30,11 @@ const ContactForm = (props) => {
         }).then(response => {
             console.log(response);
             setButtonText("Submitted!");
+            handleReset();
         }).catch(error => {
             console.log(error);
-            alert("Unable to send message :(");
+            setTimeout(function() {alert("This has not been implemented yet :("); handleReset();}, 2000);
         })
-
-        handleReset();
     }
 
     const handleReset = () => {
@@ -46,14 +47,6 @@ const ContactForm = (props) => {
 
     return (
         <form>
-
-            <div className="text-center">
-                <h1 className="greeting">I'm excited to hear from you!</h1>
-                <h2 className="email-me">Please enter your message in the form below, or 
-                    <a href={`mailto:${props.email}`}> send me an email.</a>
-                </h2>
-            </div>
-
             <FormRow
                 name="Name"
                 input="input"

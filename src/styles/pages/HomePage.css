@@ -23,3 +23,20 @@
     border-radius: 100%;
     border: 2px solid white;
 }
+
+/* Resize for medium screens */
+@media (max-width: 720px) {
+    .name {
+        font-size: 1.75rem;
+        padding: 5% 5% 1% 5%;
+    }
+    .title {
+        font-size: 1rem;
+    }
+}
+
+/* Resize for small screens */
+@media (max-width: 486px) {
+    
+
+}

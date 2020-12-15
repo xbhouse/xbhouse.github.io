@@ -17,3 +17,16 @@
     border: none;
     font-size: 2rem;
 }
+
+/* Resize for medium screens */
+@media (max-width: 720px) {
+    .project-button {
+        font-size: 1rem;
+    }
+  }
+  
+/* Resize for small screens */
+@media (max-width: 486px) {
+
+
+}

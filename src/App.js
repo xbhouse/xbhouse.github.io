@@ -1,11 +1,15 @@
 import React, {Fragment} from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'; 
+import {BrowserRouter as 
+       Router, 
+       Switch, 
+       Route, 
+       Redirect} from 'react-router-dom'; 
 import Navigation from './components/Navigation';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ProjectPage from './pages/ProjectPage';
-import ContactPage from './pages/ContactPage';
-import Project from './components/Project';
+import {HomePage,
+       AboutPage,
+       ProjectPage, 
+       ContactPage} from './pages';
+import {Project} from './components';
 import {capstoneImages, 
         climbItImages, 
         recallTrackerImages, 
@@ -94,7 +98,7 @@ const App = () => {
               repo="https://github.com/xbhouse/spacehunt-best-team"
             ></Project> )} 
           />
-
+          
           <Route exact path="/contact" component={ContactPage} />
       
         </Switch>

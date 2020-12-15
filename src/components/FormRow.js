@@ -3,7 +3,7 @@ import React from 'react';
 const FormRow = (props) => {
     return (
         <div class="form-group row">
-            <label for={props.name.toLowerCase()}>{props.name} *</label>
+            <label className="row-label" for={props.name.toLowerCase()}>{props.name} *</label>
             {props.input === "input" && 
                 <input
                     type="text"

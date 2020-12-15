@@ -77,8 +77,8 @@ const ContactForm = (props) => {
                         html="" 
                         onClick={handleSubmit} 
                     >{buttonText}
-                        <span id="spinner" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style={{visibility:"hidden"}}></span> 
-                        <span class="sr-only">Loading...</span>
+                        <span id="spinner" className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style={{visibility:"hidden"}}></span> 
+                        <span className="sr-only">Loading...</span>
                     </button>
                     <button 
                         id="reset-button"

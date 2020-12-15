@@ -2,8 +2,8 @@ import React from 'react';
 
 const FormRow = (props) => {
     return (
-        <div class="form-group row">
-            <label className="row-label" for={props.name.toLowerCase()}>{props.name} *</label>
+        <div className="form-group row">
+            <label className="row-label" htmlFor={props.name.toLowerCase()}>{props.name} *</label>
             {props.input === "input" && 
                 <input
                     type="text"
@@ -22,7 +22,7 @@ const FormRow = (props) => {
                     onChange={(event)=> props.setState(event.target.value)}
                     value={props.state}
                     rows="3" 
-                    maxlength="12345"></textarea>
+                    maxLength="12345"></textarea>
             }
         </div>
     )

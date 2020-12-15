@@ -1,31 +1,31 @@
-import React, {Fragment} from "react";
+import React, {Fragment} from 'react';
 import {BrowserRouter as Router, useHistory} from 'react-router-dom';
-import '../styles/components/Project.css'
+import Carousel from 'react-elastic-carousel';
+import '../styles/components/Project.css';
 
 const Project = (props) => {
     const history = useHistory();
-
-    const images = props.images.map(image => {
-        return (
-            <Fragment>
-                <img 
-                    className="project-image" 
-                    key={image} 
-                    src={image} 
-                    alt="Screenshot of UI" 
-                    style={{width: props.size}}>
-                </img>
-                {props.size === "60%" && <div></div>}
-            </Fragment>
-        )
-    })
 
     return (
         <Fragment>
             <h1 className="project-title">{props.title}</h1>
             <p className="image-caption">{props.caption}</p>
             <div className="image-container">
-                {images}
+                
+                <Carousel>
+                    {props.images.map(image => {
+                        return (
+                            <img 
+                                className="project-image" 
+                                key={image} 
+                                src={image} 
+                                alt="Screenshot of UI" 
+                                style={{width: props.size}}>
+                            </img> 
+                        )
+                    })}
+                </Carousel>
+        
             </div>
             <p className="description">{props.description}</p>
             <p className="role">{props.role}</p>

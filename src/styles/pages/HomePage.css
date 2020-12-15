@@ -1,5 +1,5 @@
 .name {
-    font-size: 5rem;
+    font-size: 3rem;
     color: rgb(245, 243, 243);
     padding: 5% 10% 1% 10%;
     text-align: center; 
@@ -8,7 +8,7 @@
   }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(245, 243, 243);
     padding: 2% 10% 5% 10%;
     text-align: center; 

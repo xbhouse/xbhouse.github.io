@@ -7,11 +7,12 @@ const NavItem = (props) => {
             {(props.pageName === "GitHub" 
                 || props.pageName === "LinkedIn") &&
                 <a 
+                    className="nav-button-external"
                     href={props.link} 
                     target="_blank" 
                     rel="noopener noreferrer">
                     <button 
-                        className="nav-button" 
+                        className="nav-button-external" 
                         title={props.pageName}
                     >{props.pageName.toLowerCase()}</button></a>
             }

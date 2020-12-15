@@ -10,6 +10,7 @@ const ContactForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        document.getElementById("spinner").style.visibility = "visible";
         setButtonText("Sending message...");
         
         const data = {
@@ -20,20 +21,27 @@ const ContactForm = (props) => {
 
         console.log(data);
 
-        /*axios.post(url, data)
-        .then(response => {
+        axios({
+            method: "POST",
+            url: "http://127.0.0.1:5000/send_message",
+            data: data
+        }).then(response => {
             console.log(response);
             setButtonText("Submitted!");
-        })
-        .catch(error => {
+        }).catch(error => {
             console.log(error);
-        })*/
+            alert("Unable to send message :(");
+        })
+
+        handleReset();
     }
 
-    const handleReset = (event) => {
-        document.getElementById("name").value="";
-        document.getElementById("email").value="";
-        event.target.value="";
+    const handleReset = () => {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setButtonText("Submit");
+        document.getElementById("spinner").style.visibility = "hidden";
     }
 
     return (
@@ -70,11 +78,17 @@ const ContactForm = (props) => {
             <div className="text-center button-container">
                 <div className="form-group mt-5 mb-0">
                     <button 
-                        type="submit" 
-                        className="btn btn-primary btn-lrg" 
+                        id="submit-button"
+                        type="button" 
+                        className="btn btn-primary btn-lrg"
+                        html="" 
                         onClick={handleSubmit} 
-                    >{buttonText}</button>
+                    >{buttonText}
+                        <span id="spinner" class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style={{visibility:"hidden"}}></span> 
+                        <span class="sr-only">Loading...</span>
+                    </button>
                     <button 
+                        id="reset-button"
                         type="reset" 
                         className="btn btn-secondary btn-lrg" 
                         onClick={handleReset}

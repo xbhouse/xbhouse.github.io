@@ -19,15 +19,19 @@
     list-style: none;
   }
 
-  .nav-button {
+  .nav-button, .nav-button-external {
     color: black;
     border: none;
     background-color: #0c3f5f;
-    font-size: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .nav-button-external {
+    margin-top: 9%;
   }
 
   .nav-item {
-    margin: 7% 10% 6% 5%;
+    margin: 4% 6% 3% 2%;
   }
 
   .nav-link {

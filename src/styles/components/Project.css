@@ -5,14 +5,14 @@
     color: white;
     font-weight: bold;
     text-underline-position: under;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .image-caption {
     text-align: center;
-    font-size: 2rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 2%;
     color: rgb(250, 209, 95);
 }
@@ -36,7 +36,7 @@
     text-align: center;
     margin-top: 4%;
     margin-bottom: 7%;
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-decoration: none !important; 
     color: rgb(171, 118, 221);
 }

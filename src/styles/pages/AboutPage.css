@@ -1,7 +1,7 @@
   .greeting {
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -10,7 +10,7 @@
   .interests-container {
     margin-left: 25%;
     margin-bottom: 2%;
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   .interest-item {
@@ -18,7 +18,7 @@
   }
 
   .info {
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-bottom: 10%;
     margin-top: 0;
     color: rgb(245, 243, 243);

@@ -1,6 +1,6 @@
 .email-me {
     margin-bottom: 7%;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 a:link {
@@ -28,22 +28,17 @@ textarea {
 }
 
 .btn-primary {
-    background-color: rgb(16, 125, 92);
     border-color: black;
 }
 
 .btn-secondary {
-    background-color: rgb(143, 34, 14);
     color: white;
     border-color: black;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-    background-color: orange;
-}
-
-.btn-primary:focus, .btn-secondary:focus {
+.btn-primary:focus, .btn-secondary:focus, .btn-primary:active, .btn-secondary:active {
     outline: 0 !important;
+    border: none;
 }
 
 .button-container {

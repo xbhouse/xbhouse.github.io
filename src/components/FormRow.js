@@ -16,7 +16,7 @@ const FormRow = (props) => {
             }
             {props.input === "textarea" && 
                 <textarea 
-                    className="form-control ml-8 mr-3" 
+                    className="form-control ml-3 mr-3" 
                     type="text"
                     id={props.name.toLowerCase()}
                     onChange={(event)=> props.setState(event.target.value)}

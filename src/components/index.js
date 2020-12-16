@@ -6,3 +6,5 @@ export {default as Project} from './Project.js';
 export {default as ProjectList} from './ProjectList.js';
 export {default as ProjectListItem} from './ProjectListItem.js';
 export {default as ThemeToggle} from './ThemeToggle.js';
+export {default as Experience} from './Experience.js';
+export {default as Skill} from './Skill.js';

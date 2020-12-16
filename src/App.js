@@ -8,7 +8,9 @@ import Navigation from './components/Navigation';
 import {HomePage,
        AboutPage,
        ProjectPage, 
-       ContactPage} from './pages';
+       ContactPage,
+       ExperiencePage,
+       SkillsPage} from './pages';
 import {Project, ThemeToggle} from './components';
 import {capstoneImages, 
         climbItImages, 
@@ -44,6 +46,10 @@ const App = () => {
           <Route exact path="/home" component={HomePage} />
 
           <Route exact path="/about" component={AboutPage} />
+
+          <Route exact path="/experience" component={ExperiencePage} />
+
+          <Route exact path="/skills" component={SkillsPage} />
 
           <Route exact path="/projects" component={ProjectPage} />
 

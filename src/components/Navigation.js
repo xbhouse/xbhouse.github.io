@@ -17,6 +17,12 @@ const Navigation = () => {
                         pageName="About"
                     />
                     <NavItem
+                        pageName="Experience"
+                    />
+                    <NavItem
+                        pageName="Skills"
+                    />
+                    <NavItem
                         pageName="Projects"
                     />
                     <NavItem

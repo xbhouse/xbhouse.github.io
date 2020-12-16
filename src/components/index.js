@@ -5,3 +5,4 @@ export {default as NavItem} from './NavItem.js';
 export {default as Project} from './Project.js';
 export {default as ProjectList} from './ProjectList.js';
 export {default as ProjectListItem} from './ProjectListItem.js';
+export {default as ThemeToggle} from './ThemeToggle.js';

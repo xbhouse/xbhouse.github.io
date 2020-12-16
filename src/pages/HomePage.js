@@ -1,11 +1,10 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment} from "react";
 import AnimatedLetters from "../components/AnimatedLetters";
 import '../styles/pages/HomePage.css'
 
 const HomePage = () => {
 
     const name = ("Bryttanie House".split(""));
-
     const title = ("Designer & Developer".split(""));
 
     const handleClick = () => {
@@ -26,9 +25,6 @@ const HomePage = () => {
 
         document.getElementById("portrait").style.transform = imgTransform;
     }
-
-
-
 
     return (
         <Fragment>

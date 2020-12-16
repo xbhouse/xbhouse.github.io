@@ -9,7 +9,7 @@ import {HomePage,
        AboutPage,
        ProjectPage, 
        ContactPage} from './pages';
-import {Project} from './components';
+import {Project, ThemeToggle} from './components';
 import {capstoneImages, 
         climbItImages, 
         recallTrackerImages, 
@@ -38,10 +38,10 @@ const App = () => {
         <Switch>
 
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/portfolio" />
           </Route> 
 
-          <Route exact path="/home" component={HomePage} />
+          <Route exact path="/portfolio" component={HomePage} />
 
           <Route exact path="/about" component={AboutPage} />
 
@@ -104,6 +104,7 @@ const App = () => {
         </Switch>
         
       </Router>
+      <ThemeToggle />
     </Fragment>
   )
 }

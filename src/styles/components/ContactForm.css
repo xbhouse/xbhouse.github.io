@@ -7,12 +7,8 @@ a:link {
     text-decoration: none;
 }
 
-input[type=text] {
-    background-color: rgb(245, 243, 243);
-}
-
-textarea[type=text] {
-    background-color: rgb(245, 243, 243);
+input[type=text], textarea[type=text] {
+    background-color: var(--contactInput);
 }
 
 textarea {
@@ -24,12 +20,11 @@ textarea {
 }
 
 .btn-primary {
-    border-color: black;
+    border: 2px solid var(--contactButtonBorder);
 }
 
 .btn-secondary {
-    color: white;
-    border-color: black;
+    border: 2px solid var(--contactButtonBorder);
 }
 
 .btn-primary:focus, .btn-secondary:focus, .btn-primary:active, .btn-secondary:active {

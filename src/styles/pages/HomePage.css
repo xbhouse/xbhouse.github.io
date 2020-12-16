@@ -1,6 +1,5 @@
 .name {
     font-size: 3rem;
-    color: rgb(245, 243, 243);
     padding: 5% 10% 1% 10%;
     text-align: center; 
     font-family: 'Nothing You Could Do', cursive;
@@ -8,7 +7,7 @@
 
 .title {
     font-size: 2rem;
-    color: rgb(245, 243, 243);
+    color: var(--text);
     padding: 2% 10% 5% 10%;
     text-align: center; 
 }
@@ -18,7 +17,7 @@
 }
 
 .image-button {
-    background-color: black;
+    background-color: var(--background);
     width: 100%;
     border: none;
 }
@@ -30,7 +29,7 @@
 .portrait {
     width: 25%;
     border-radius: 100%;
-    border: 2px solid white;
+    border: 2px solid var(--border);
     filter: grayscale(100%);
 }
 

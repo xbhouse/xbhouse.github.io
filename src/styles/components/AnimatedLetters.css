@@ -1,5 +1,5 @@
 h1 span span { 
-    color: rgb(194, 112, 194); 
+    color: var(--animatedText1); 
 }
 h1 span span, h2 span span {
     position: relative;
@@ -7,13 +7,13 @@ h1 span span, h2 span span {
     animation: move-text 0.75s forwards;
 }
 h1 span span:nth-child(2n) {
-    color: rgb(216, 183, 224); 
+    color: var(--animatedText2); 
 }
 h1 span span:nth-child(3n) {
-     color: rgb(244, 213, 234); 
+     color: var(--animatedText3); 
 }
 h1 span span:nth-child(7n) {
-    color: rgb(246, 248, 246); 
+    color: var(--animatedText4); 
 }
 
 @keyframes move-text {

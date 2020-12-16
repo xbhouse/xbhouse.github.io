@@ -2,7 +2,7 @@
     text-align: center;
     margin-bottom: 5%;
     margin-top: 5%;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     text-underline-position: under;
     font-size: 3rem;
@@ -14,7 +14,7 @@
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 2%;
-    color: rgb(250, 209, 95);
+    color: var(--caption);
 }
 
 .description, .role {
@@ -29,7 +29,6 @@
 .link-container {
     text-align: center;
     padding-bottom: 5%;
-    border-bottom: 1px solid white;
 }
 
 .link-to-repo {
@@ -38,11 +37,11 @@
     margin-bottom: 7%;
     font-size: 1.75rem;
     text-decoration: none !important; 
-    color: rgb(171, 118, 221);
+    color: var(--link);;
 }
 
 .link-to-repo:hover, .back-button:hover {
-    color: rgb(255, 153, 0);
+    color: var(--hover);
 }
 
 .back-button {
@@ -51,8 +50,8 @@
     margin-bottom: 7%;
     margin-right: 10%;
     font-size: 1.75rem;
-    color: rgb(171, 118, 221);
-    background-color: black;
+    color: var(--link);
+    background-color: var(--background);
     border: none;
 }
 
@@ -61,9 +60,9 @@
 }
 
 button.rec-arrow {
-    color: rgb(245, 237, 237) !important;
-    background-color: black !important;
-    border: 1px solid white;
+    color: var(--text) !important;
+    background-color: var(--background) !important;
+    border: 1px solid var(--border);
     outline: 0 !important;
 }
 
@@ -80,8 +79,8 @@ button.rec-arrow-right {
 }
 
 button.rec-dot {
-    background-color: black;
-    border: 1px solid white;
+    background-color: var(--background);
+    border: 1px solid var(--border);
     height: 15px;
     margin-top: 0;
 }

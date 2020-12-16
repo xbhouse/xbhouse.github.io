@@ -10,7 +10,7 @@
     font-size: 1.25rem;
     margin-bottom: 10%;
     margin-top: 0;
-    color: rgb(245, 243, 243);
+    color: var(--text);
   }
 
   .interests-container {

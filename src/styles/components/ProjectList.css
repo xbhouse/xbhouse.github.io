@@ -12,14 +12,14 @@
 }
 
 .project-button {
-    background-color: black;
+    background-color: var(--background);
     outline: 0 !important;
     border: none;
     font-size: 2rem;
 }
 
 .project-button:hover {
-    border: 1px solid white;
+    border: 1px solid var(--border);
     transition: 800ms;    
 }
 

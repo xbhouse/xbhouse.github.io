@@ -15,7 +15,7 @@
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .page-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .page-subtitle {
         font-size: 1rem;
@@ -24,6 +24,6 @@
   
 /* Resize for small screens */
 @media (max-width: 486px) {
-
+    
 
 }

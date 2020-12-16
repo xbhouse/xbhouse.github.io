@@ -1,3 +1,11 @@
+.contact-greeting {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
 .email-me {
     margin-bottom: 7%;
     font-size: 2rem;
@@ -52,5 +60,12 @@ textarea {
   /* Resize for small screens */
   @media (max-width: 486px) {
     
-  
+    .contact-greeting {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 2rem;
+    }
+    .row-label {
+        margin-left: 2%;
+    }
   }

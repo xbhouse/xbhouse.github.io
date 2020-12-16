@@ -10,7 +10,7 @@ const Project = (props) => {
         <Fragment>
             <h1 className="project-title">{props.title}</h1>
             <p className="image-caption">{props.caption}</p>
-            <div className="image-container">
+            <div className="project-image-container">
                 
                 <Carousel>
                     {props.images.map(image => {

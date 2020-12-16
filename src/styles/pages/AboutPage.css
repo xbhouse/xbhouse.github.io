@@ -49,6 +49,22 @@
 
 /* Resize for small screens */
 @media (max-width: 486px) {
-
+  .greeting {
+    font-size: 3rem;
+  }
+  .info, .interests-container {
+    font-size: 1rem;
+  }
+  .interests-container {
+    margin-bottom: 5%;
+    margin-left: 7%;
+  }
+  .intro, .middle, .closing {
+    margin-bottom: 5%;
+    text-align: left;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
 
 }

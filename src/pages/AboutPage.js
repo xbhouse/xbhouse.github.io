@@ -15,10 +15,10 @@ const AboutPage = () => {
                     <li id="interest-item3" className="interest-item">Full-stack application development</li>
                     <li id="interest-item4" className="interest-item">Database design</li>
                     <li id="interest-item5" className="interest-item">UX/UI design</li>
-                    <li id="interest-item1" className="interest-item">Ethics</li>
+                    <li id="interest-item1" className="interest-item">Data ethics</li>
                 </ul>
                 <p className="middle">I appreciate challenges and converting difficult ones to intuitive, usable solutions, from
-                    user interface design to scheduling algorithms to customized implemententation of platform infrastructure.
+                    user interface design to scheduling algorithms to customized implementation of SaaS in the cloud.
                     Additionally, I enjoy learning about and tinkering with the latest technologies, hiking and frolicking in nature, making 
                     art, and cooking nourishing meals with loved ones.</p>
                 <p className="closing">I recently graduated from Portland State University with a Bachelor of Science in Computer Science. 

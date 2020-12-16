@@ -1,5 +1,5 @@
 :root {
-  --navBarBg: rgb(8, 92, 143);
+  --navBarBg: rgb(37, 112, 159);
   --navBarText: black;
   --navBarTextBorder: white;
   --navBarHover: rgb(162, 222, 237);
@@ -9,9 +9,8 @@
   --border: white;
   --projectBorder: white;
   --contactButtonBorder: black;
-  --caption: rgb(245, 243, 243);
-  --coloredCaption: rgb(171, 118, 221);
-  --link: rgb(171, 118, 221);
+  --coloredCaption:rgb(155, 135, 216);
+  --link: rgb(155, 135, 216);
   --contactInput: rgb(245, 243, 243);
   --animatedText1: rgb(145, 187, 116);
   --animatedText2: rgb(215, 152, 80);
@@ -33,6 +32,7 @@
   --contactButtonBorder: rgb(245, 243, 243);
   --contactInput: white;
   --caption: black;
+  --coloredCaption: rgb(62, 9, 113);
   --link: rgb(62, 9, 113);
   --animatedText1: rgb(66, 1, 66);
   --animatedText2: rgb(86, 20, 103);
@@ -186,12 +186,17 @@ nav {
 /* Resize for small screens */
 @media (max-width: 414px) {
   .nav-button {
-    font-size: 0.5rem;
+    font-size: 0.67rem;
     margin-top: 15%;
   }
-  .nav-item {
 
+  .navigation-container {
+    padding: 0;
   }
+  nav {
+    margin: 0;
+  }
+  
   .social-image {
     display: none;
   }

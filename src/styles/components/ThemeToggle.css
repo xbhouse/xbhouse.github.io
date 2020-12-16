@@ -1,0 +1,16 @@
+.toggle-button {
+    margin-left: 1%;
+    margin-bottom: 2%;
+    background: var(--background);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.toggle-button:focus, .toggle-button:active {
+    outline: 0
+}
+
+.toggle-button:hover {
+    background-color: var(--text);
+    color: var(--background);
+}

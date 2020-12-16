@@ -38,10 +38,10 @@ const App = () => {
         <Switch>
 
           <Route exact path="/">
-            <Redirect to="/portfolio" />
+            <Redirect to="/home" />
           </Route> 
 
-          <Route exact path="/portfolio" component={HomePage} />
+          <Route exact path="/home" component={HomePage} />
 
           <Route exact path="/about" component={AboutPage} />
 

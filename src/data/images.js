@@ -18,3 +18,5 @@ export const recallTrackerImages = ["/images/Recall-Tracker/onboarding-page.png"
                         "/images/Recall-Tracker/vehicle-found.png"];
 
 export const spaceHuntImages = ["/images/SpaceHunt/Spacehunt-mini-screenshot.png"];
+
+export const socialImages = ["/images/Misc/github-icon.png", "/images/Misc/linkedin-icon.png"];

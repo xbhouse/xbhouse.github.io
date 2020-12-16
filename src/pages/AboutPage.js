@@ -6,7 +6,7 @@ const AboutPage = () => {
     return (
         <Fragment>
             <div className="info">
-                <h1 className="greeting">hello!</h1> 
+                <h1 className="about-greeting">hello!</h1> 
                 <p className="intro"> (◕‿◕) I'm Bryttanie.
                     I have over 2 years of experience in full-stack development, project management, and data science,
                     as well as mentoring and teaching experience. My current interests include but are not limited to: </p>

@@ -113,6 +113,7 @@ button.rec-dot:focus {
 @media (max-width: 486px) {
     .image-caption {
         margin-bottom: 5%;
+        color: var(--coloredCaption)
     }
     .link-to-repo, .back-button {
         font-size: 0.75rem;
@@ -125,6 +126,9 @@ button.rec-dot:focus {
     .project-image {
         margin-bottom: 0;
         width: 100%;
+    }
+    .project-image-container {
+        display: none;
     }
 
 }

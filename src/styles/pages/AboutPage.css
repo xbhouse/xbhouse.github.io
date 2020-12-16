@@ -1,4 +1,4 @@
-  .greeting {
+  .about-greeting {
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 4rem;
@@ -32,7 +32,7 @@
 
   /* Resize for medium screens */
 @media (max-width: 720px) {
-  .greeting {
+  .about-greeting {
     font-size: 3rem;
   }
   .info, .interests-container {
@@ -49,7 +49,7 @@
 
 /* Resize for small screens */
 @media (max-width: 486px) {
-  .greeting {
+  .about-greeting {
     font-size: 3rem;
   }
   .info, .interests-container {

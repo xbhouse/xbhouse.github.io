@@ -1,6 +1,27 @@
 .skill-page-title {
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Nothing You Could Do', cursive;  
+}
+
+.languages-table, .packages-table, .tools-table {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5%;
+}
+
+.skill-name, .skill-table-name {
+    text-align: center;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skill-table-name {
+    letter-spacing: 0.15rem;
 }

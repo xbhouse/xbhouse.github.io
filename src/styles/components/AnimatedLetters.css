@@ -1,7 +1,7 @@
 h1 span span, h2 span span {
     position: relative;
     opacity: 0;
-    animation: move-text 0.75s forwards;
+    animation: move-text 0.85s forwards;
 }
 h1 span span:nth-child(1n) { 
     color: var(--animatedText1); 
@@ -26,7 +26,7 @@ h1 span span:nth-child(7n) {
 }
 
 @keyframes move-text {
-    0% { bottom: -0.2em; opacity: 1; }
-    50% { bottom: 0.2em; }
+    0% { bottom: -0.5em; opacity: 1; }
+    50% { bottom: 0.5em; }
     100% { bottom: 0; opacity: 1; }
 }

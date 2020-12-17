@@ -22,7 +22,7 @@ const AboutPage = () => {
                     Additionally, I enjoy learning about and tinkering with the latest technologies, hiking and frolicking in nature, making 
                     art, and cooking nourishing meals with loved ones.</p>
                 <p className="closing">I recently graduated from Portland State University with a Bachelor of Science in Computer Science. 
-                    Currently, I am an incoming Associate Consultant at Red Hat and design/develop things during any free time.
+                    Currently, I am an incoming Associate Consultant at Red Hat and a hobbyist designer/developer.
                     I am not open to any full-time employment options right now, but am available for virtual coffee and/or freelance opportunities.</p>
             </div>
         </Fragment>

@@ -1,6 +1,37 @@
 .exp-page-title {
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Nothing You Could Do', cursive;  
+}
+
+.position {
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.exp-table {
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.company, .dates, .role-description {
+    padding: 1rem;
+}
+
+.location {
+    font-style: italic;
+}
+
+.role-description {
+    text-align: left;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 2rem;
+}
+
+.exp-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
 }

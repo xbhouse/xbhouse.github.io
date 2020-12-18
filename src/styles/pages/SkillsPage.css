@@ -14,6 +14,10 @@
     margin-bottom: 5%;
 }
 
+.tools-table {
+    padding-bottom: 10%;
+}
+
 .skill-name, .skill-table-name {
     text-align: center;
 }

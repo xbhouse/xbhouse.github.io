@@ -5,7 +5,7 @@
     --navBarHover: rgb(162, 222, 237);
     --hover: rgb(162, 222, 237);
     --text: rgb(245, 243, 243);
-    --background: rgb(8, 8, 8);
+    --background: rgb(19, 19, 19);
     --themeButtonText: rgb(8, 8, 8);
     --themeButtonBackground: white;
     --border: white;
@@ -117,7 +117,7 @@
     text-align: center;
   }
 
-  .nav-button:after {    
+  /*.nav-button:after {    
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;
@@ -127,11 +127,15 @@
     background: var(--navBarTextBorder);
     transition: width 1.25s ease 0s, left 1.25s ease 0s;
     width: 0;
-  }
+  }*/
 
-  .nav-button:hover:after { 
+  /*.nav-button:hover:after { 
     width: 100%; 
     left: 0; 
+  }*/
+
+  .nav-button:hover{
+    border: 4px dotted var(--text)
   }
 
   .github-image{
@@ -146,6 +150,7 @@
   .github-image:hover, .linkedin-image:hover {
     filter: invert(100%)
   }
+
   @media (max-width: 1160px) {
     .nav-button {
       font-size: 1rem;
@@ -154,7 +159,6 @@
     .bm-menu-wrap {
       width: 50%;
     }
-  
   }
   
   @media (max-width: 1060px) {
@@ -165,12 +169,6 @@
     .bm-menu-wrap {
       width: 50%;
     }
-  
-  }
-  
-  @media (max-width: 889px) {
-
-    
   }
   
   /* Resize for medium screens */
@@ -191,15 +189,6 @@
     }
   }
   
-  @media (max-width: 610px) {
-   
-  }
-  
-  @media (max-width: 577px) {
-    
-    
-  }
-  
   
   /* Resize for small screens */
   @media (max-width: 414px) {
@@ -216,9 +205,7 @@
     }
     .bm-menu-wrap {
       width: 50%;
-    }
-    
-    
+    } 
   }
   
   

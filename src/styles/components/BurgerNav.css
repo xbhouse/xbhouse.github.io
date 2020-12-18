@@ -146,7 +146,8 @@
   }
 
   .github-image:hover, .linkedin-image:hover {
-    filter: invert(100%)
+    filter: invert(100%);
+    transition: 900ms ease; 
   }
 
   @media (max-width: 1160px) {

@@ -9,7 +9,7 @@ const AboutPage = () => {
                 <h1 className="about-greeting">hello!</h1> 
                 <p className="intro"> (◕‿◕) I'm Bryttanie.
                     I have over 2 years of experience in full-stack development, project management, and data science,
-                    as well as mentoring and teaching experience. My current interests include but are not limited to: </p>
+                    as well as mentoring and teaching experience. My current technical interests include but are not limited to: </p>
                 <ul className="interests-container">
                     <li id="interest-item2" className="interest-item">Data science and engineering</li>
                     <li id="interest-item3" className="interest-item">Full-stack application development</li>
@@ -18,7 +18,7 @@ const AboutPage = () => {
                     <li id="interest-item1" className="interest-item">Data ethics</li>
                 </ul>
                 <p className="middle">I appreciate challenges and converting difficult ones to intuitive, usable solutions, from
-                    user interface design to scheduling algorithms to customized implementation of SaaS in the cloud.
+                    user interface design to scheduling algorithms to customized configuration of cloud platforms and infrastructure services.
                     In my free time, I enjoy learning about and tinkering with the latest technologies, hiking/frolicking in nature, making 
                     art, and cooking.</p>
                 <p className="closing">I recently graduated from Portland State University with a Bachelor of Science in Computer Science. 

@@ -17,7 +17,7 @@ const SkillsPage = () => {
                     skillList={languages}
                 />
                 <SkillTable 
-                    tableName="Frameworks/Libraries/Packages"
+                    tableName="Frameworks/Libraries"
                     styleName="packages"
                     skillList={packages}
                 />

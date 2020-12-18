@@ -58,6 +58,7 @@ textarea {
     .contact-greeting {
         font-size: 2.5rem;
         margin-top: 10%;
+        padding-top: 5%;
     }
     .email-me {
         font-size: 1.25rem;
@@ -71,11 +72,13 @@ textarea {
   /* Resize for small screens */
   @media (max-width: 486px) {
     .contact-greeting {
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 15% 5% 5% 5%;
         font-size: 2rem;
     }
     .row-label {
         margin-left: 2%;
+    }
+    .btn-lrg {
+        width: 50%;
     }
   }

@@ -61,11 +61,14 @@
     margin-left: 7%;
   }
   .intro, .middle, .closing {
-    margin-bottom: 5%;
     text-align: left;
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 5%;
+  }
+
+  .middle, .interests-container {
+    margin-bottom: 10%;
   }
 
 }

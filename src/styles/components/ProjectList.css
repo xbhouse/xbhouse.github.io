@@ -23,11 +23,18 @@
     transition: 800ms;    
 }
 
+.project-link:hover {
+    color: var(--hover);
+}
+
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .project-button {
         font-size: 1.25rem;
         padding: 1rem;
+    }
+    .project-list {
+        margin-right: 6%;
     }
 }
   
@@ -36,6 +43,9 @@
     .project-button {
         font-size: 1.25rem;
         padding: 1rem;
+    }
+    .project-list {
+        margin-right: 8%;
     }
 
 }

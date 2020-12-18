@@ -19,8 +19,8 @@ const AboutPage = () => {
                 </ul>
                 <p className="middle">I appreciate challenges and converting difficult ones to intuitive, usable solutions, from
                     user interface design to scheduling algorithms to customized implementation of SaaS in the cloud.
-                    Additionally, I enjoy learning about and tinkering with the latest technologies, hiking and frolicking in nature, making 
-                    art, and cooking nourishing meals with loved ones.</p>
+                    In my free time, I enjoy learning about and tinkering with the latest technologies, hiking/frolicking in nature, making 
+                    art, and cooking.</p>
                 <p className="closing">I recently graduated from Portland State University with a Bachelor of Science in Computer Science. 
                     Currently, I am an incoming Associate Consultant at Red Hat and a hobbyist designer/developer.
                     I am not open to any full-time employment options right now, but am available for virtual coffee and/or freelance opportunities.</p>

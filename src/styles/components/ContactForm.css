@@ -11,6 +11,10 @@
     font-size: 2rem;
 }
 
+.email-link:hover {
+    color: var(--hover);
+}
+
 .form-container {
     margin-left: 10%;
     margin-right: 10%;

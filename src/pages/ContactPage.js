@@ -9,7 +9,7 @@ const ContactPage = () => {
                 <div className="text-center">
                     <h1 className="contact-greeting">i'm excited to hear from you!</h1>
                     <h2 className="email-me">Please enter your message in the form below, or 
-                        <a href="mailto:bryttbhouse@gmail.com"> send me an email.</a>
+                        <a className="email-link" href="mailto:bryttbhouse@gmail.com"> send me an email.</a>
                     </h2>
                 </div>
                 <ContactForm />

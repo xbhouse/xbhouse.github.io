@@ -38,6 +38,10 @@
     transform: scaleX(1) scaleY(1);
 }
 
+.secret {
+    color: var(--background);
+}
+
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .name {

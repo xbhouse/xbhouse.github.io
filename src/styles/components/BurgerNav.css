@@ -6,7 +6,8 @@
     --hover: rgb(162, 222, 237);
     --text: rgb(245, 243, 243);
     --background: rgb(8, 8, 8);
-    --themeButtonBackground: rgb(8, 8, 8);
+    --themeButtonText: rgb(8, 8, 8);
+    --themeButtonBackground: white;
     --border: white;
     --projectBorder: white;
     --contactButtonBorder: black;
@@ -28,7 +29,8 @@
     --hover: rgb(126, 14, 14);
     --text: black;
     --background: rgb(245, 243, 243);
-    --themeButtonBackground: white;
+    --themeButtonText: white;
+    --themeButtonBackground: rgb(8, 8, 8);
     --border: black;
     --projectBorder: rgb(247, 244, 247);
     --contactButtonBorder: rgb(245, 243, 243);
@@ -119,7 +121,7 @@
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     left: 50%;
     position: absolute;
     background: var(--navBarTextBorder);

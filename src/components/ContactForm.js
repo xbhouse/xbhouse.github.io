@@ -10,24 +10,21 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [buttonText, setButtonText] = useState("Submit");
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const success = () => toast("Thank you for your message!");
-        const invalidInput = () => toast("Please enter your name, email, and a message.");
-        if(name === "" || email === "" || message === "") {
-            invalidInput();
-            return;
-        }
-        document.getElementById("spinner").style.visibility = "visible";
-        setButtonText("Sending message...");
-        
+    const sendMessage = () => {
+        const invalidInput = () => toast("That doesn't look like a valid email address :(");
+
         const data = {
             name,
             email, 
             message
         };
 
-        axios({
+        if(!email.includes(".") || !email.includes("@")){
+            invalidInput();
+            return;
+        }
+
+        return axios({
             method: "POST",
             url: "http://127.0.0.1:5000/send_message",
             data: data
@@ -35,11 +32,34 @@ const ContactForm = () => {
             console.log(response);
             setButtonText("Submitted!");
             handleReset();
+            return response;
         }).catch(error => {
             console.log(error);
-            //setTimeout(function() {alert("This has not been implemented yet :("); handleReset();}, 2000);
-            setTimeout(function() {handleReset(); success();}, 2000);
+            return error;
         })
+    }
+
+    const handleSubmit = () => {
+        const success = () => toast("Thank you for your message!");
+        const invalidInput = () => toast("Please enter your name, email, and a message.");
+
+        if(name === "" || email === "" || message === "") {
+            invalidInput();
+            return;
+        }
+
+        document.getElementById("spinner").style.visibility = "visible";
+        setButtonText("Sending message...");
+        let promise = sendMessage();
+    
+        if(promise) {
+            sendMessage().then(() => {
+                setTimeout(function() {handleReset(); success();}, 3000);
+            })
+        }
+        else {
+            handleReset();
+        }
     }
 
     const handleReset = () => {

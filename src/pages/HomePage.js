@@ -47,6 +47,7 @@ const HomePage = () => {
                     </img>
                 </button>
             </div>
+            <footer className="text-center secret">lol u found me</footer>
         </Fragment>
     )
 }

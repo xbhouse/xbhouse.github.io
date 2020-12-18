@@ -26,7 +26,7 @@ const ProjectList = () => {
                     />
                     <ProjectListItem 
                         path="home"
-                        title="this website!"
+                        title="this website"
                     />
                 </ul>
             </div>

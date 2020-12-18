@@ -1,6 +1,6 @@
 .page-title {
     font-size: 3rem;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 2%;
     text-align: center;
     font-family: 'Nothing You Could Do', cursive;
@@ -15,7 +15,7 @@
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .page-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
     .page-subtitle {
         font-size: 1rem;
@@ -24,6 +24,11 @@
   
 /* Resize for small screens */
 @media (max-width: 486px) {
-    
-
+    .page-title {
+        font-size: 1.75rem;
+        margin: 15% 5% 1% 5%;
+    }
+    .page-subtitle {
+        font-size: 1rem;
+    }
 }

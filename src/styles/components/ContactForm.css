@@ -1,5 +1,5 @@
 .contact-greeting {
-    margin-top: 6%;
+    margin-top: 13%;
     margin-bottom: 5%;
     font-size: 3rem;
     text-align: center;
@@ -9,6 +9,11 @@
 .email-me {
     margin-bottom: 7%;
     font-size: 2rem;
+}
+
+.form-container {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 a:link {
@@ -46,8 +51,9 @@ textarea {
 
 /* Resize for medium screens */
 @media (max-width: 720px) {
-    .greeting {
-        font-size: 1.5rem;
+    .contact-greeting {
+        font-size: 2.5rem;
+        margin-top: 10%;
     }
     .email-me {
         font-size: 1.25rem;
@@ -60,7 +66,6 @@ textarea {
   
   /* Resize for small screens */
   @media (max-width: 486px) {
-    
     .contact-greeting {
         margin-top: 5%;
         margin-bottom: 5%;

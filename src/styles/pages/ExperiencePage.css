@@ -1,5 +1,5 @@
 .exp-page-title {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     font-size: 3rem;
     font-family: 'Nothing You Could Do', cursive;  
@@ -34,4 +34,60 @@
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 10%;
+}
+
+/* Resize for large screens */
+@media (max-width: 1200px) {
+    .exp-container {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    .exp-page-title {
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+    .position {
+        font-size: 2rem;
+    }
+}
+
+/* Resize for medium screens */
+@media (max-width: 720px) {
+    .exp-container {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    .exp-page-title {
+        font-size: 3rem;
+    }
+    .position {
+        font-size: 2rem;
+    }
+}
+
+/* Resize for small screens */
+@media (max-width: 486px) {
+    .exp-container {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+
+    .exp-page-title {
+        font-size: 2rem;
+        padding: 0 5% 0 5%;
+    }
+    .position {
+        font-size: 1.5rem;
+        padding: 8% 5% 1% 5%;
+    }
+    .company, .dates, .role-description {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
 }

@@ -1,6 +1,6 @@
 .name {
     font-size: 3rem;
-    padding: 5% 10% 1% 10%;
+    padding: 10% 10% 1% 10%;
     text-align: center; 
     font-family: 'Nothing You Could Do', cursive;
 }
@@ -41,16 +41,26 @@
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .name {
-        font-size: 1.75rem;
-        padding: 5% 5% 1% 5%;
+        font-size: 3rem;
+        padding: 20% 5% 1% 5%;
     }
     .title {
-        font-size: 1rem;
+        font-size: 2rem;
+    }
+    .portrait {
+        width: 35%;
     }
 }
 
 /* Resize for small screens */
 @media (max-width: 486px) {
+    .name {
+        font-size: 2rem;
+        padding: 20% 10% 1% 10%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
     .portrait {
         width: 35%;
     }

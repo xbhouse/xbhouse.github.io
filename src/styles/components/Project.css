@@ -57,6 +57,7 @@
 
 .project-image {
     margin-bottom: 0;
+    border: 1px solid var(--text);
 }
 
 button.rec-arrow {

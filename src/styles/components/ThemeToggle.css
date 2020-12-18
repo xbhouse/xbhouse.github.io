@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    margin-right: 1%;
+    margin-right: 2%;
     margin-bottom: 2%;
     background: var(--themeButtonBackground);
     color: var(--text);

@@ -51,7 +51,7 @@ const ContactForm = () => {
     }
 
     return (
-        <form>
+        <form className="form-container">
             <FormRow
                 name="Name"
                 input="input"

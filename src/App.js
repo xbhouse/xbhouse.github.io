@@ -4,14 +4,13 @@ import {BrowserRouter as
        Switch, 
        Route, 
        Redirect} from 'react-router-dom'; 
-import Navigation from './components/Navigation';
 import {HomePage,
        AboutPage,
        ProjectPage, 
        ContactPage,
        ExperiencePage,
        SkillsPage} from './pages';
-import {Project, ThemeToggle} from './components';
+import {Project, Navigation, BurgerNav, ThemeToggle} from './components';
 import {capstoneImages, 
         climbItImages, 
         recallTrackerImages, 
@@ -35,8 +34,9 @@ const App = () => {
   return (
     <Fragment>
       <Router>
-        <Navigation/>
-
+        <div id="outer-container"> 
+        <BurgerNav/>
+        <main id="page-wrap">
         <Switch>
 
           <Route exact path="/">
@@ -108,9 +108,12 @@ const App = () => {
           <Route exact path="/contact" component={ContactPage} />
       
         </Switch>
-        
+        </main>
+        <ThemeToggle />
+        </div>
       </Router>
-      <ThemeToggle />
+      
+      
     </Fragment>
   )
 }

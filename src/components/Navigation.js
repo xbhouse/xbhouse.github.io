@@ -1,15 +1,17 @@
-import React, {Fragment} from "react"; 
+import React, {Fragment} from 'react'; 
+import {slide as Menu} from 'react-burger-menu';
 import NavItem from '../components/NavItem.js';
-import '../styles/components/Navigation.css';
-import SocialLink from "./SocialLink.js";
+//import '../styles/components/Navigation.css';
+import SocialLink from './SocialLink.js';
 
 const Navigation = () => {
 
     return (
         <Fragment>
+            
             <nav>
                 <ul className="navigation-container">
-
+                    
                     <NavItem
                         pageName="Home"
                     />
@@ -43,6 +45,7 @@ const Navigation = () => {
                     
                 </ul> 
             </nav>
+            
         </Fragment>
     )
 

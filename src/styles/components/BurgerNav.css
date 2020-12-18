@@ -1,0 +1,222 @@
+:root {
+    --navBarBg: rgb(37, 112, 159);
+    --navBarText: black;
+    --navBarTextBorder: white;
+    --navBarHover: rgb(162, 222, 237);
+    --hover: rgb(162, 222, 237);
+    --text: rgb(245, 243, 243);
+    --background: rgb(8, 8, 8);
+    --themeButtonBackground: rgb(8, 8, 8);
+    --border: white;
+    --projectBorder: white;
+    --contactButtonBorder: black;
+    --coloredCaption:rgb(155, 135, 216);
+    --link: rgb(155, 135, 216);
+    --contactInput: rgb(245, 243, 243);
+    --animatedText1: rgb(145, 187, 116);
+    --animatedText2: rgb(215, 152, 80);
+    --animatedText3: rgb(238, 221, 153);
+    --animatedText4: rgb(184, 93, 93);
+    --animatedText5: rgb(94, 157, 212);
+    --animatedText6: rgb(155, 135, 216);
+    --animatedText7: rgb(177, 131, 210);
+  }
+  
+  .day-mode {
+    --navBarText: black;
+    --navBarTextBorder: white;
+    --hover: rgb(126, 14, 14);
+    --text: black;
+    --background: rgb(245, 243, 243);
+    --themeButtonBackground: white;
+    --border: black;
+    --projectBorder: rgb(247, 244, 247);
+    --contactButtonBorder: rgb(245, 243, 243);
+    --contactInput: white;
+    --caption: black;
+    --coloredCaption: rgb(62, 9, 113);
+    --link: rgb(62, 9, 113);
+    --animatedText1: rgb(66, 1, 66);
+    --animatedText2: rgb(86, 20, 103);
+    --animatedText3: rgb(128, 18, 93);
+    --animatedText4: rgb(148, 11, 130);
+  }
+  
+  
+  * > body {
+    color: var(--text);
+    background-color: var(--background);
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Hamburger navigation */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  .bm-burger-bars {
+    background: var(--text);
+  }
+  .bm-cross {
+    background: var(--text);
+  }
+  .bm-cross-button:hover {
+    filter: invert(100%);
+  }
+  .bm-overlay {
+    top: 0;
+  }
+  .bm-menu-wrap {
+    top: 0;
+  }
+  
+  nav {
+    background-color: var(--navBarBg);
+    padding-top: 2rem;
+  }
+  
+  .navigation-container {
+    list-style: none;
+    outline: 0;
+    padding: 0;
+    bottom: 0;
+  }
+  
+  .nav-button {
+    border: none;
+    background-color: var(--navBarBg);
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none !important;
+    color: var(--navBarText);
+  }
+  
+  .nav-link:hover {
+    color: var(--navBarHover);
+  }
+  
+  .nav-button:focus {
+    outline: 0;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+
+  .nav-button:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--navBarTextBorder);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .nav-button:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .github-image{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  } 
+
+  .linkedin-image {
+    margin-bottom: 10%;    
+  }
+
+  .github-image:hover, .linkedin-image:hover {
+    filter: invert(100%)
+  }
+  @media (max-width: 1160px) {
+    .nav-button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .bm-menu-wrap {
+      width: 50%;
+    }
+  
+  }
+  
+  @media (max-width: 1060px) {
+    .nav-button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .bm-menu-wrap {
+      width: 50%;
+    }
+  
+  }
+  
+  @media (max-width: 889px) {
+
+    
+  }
+  
+  /* Resize for medium screens */
+  @media (max-width: 768px) {
+    .bm-burger-button {
+      position: fixed;
+      width: 18px;
+      height: 15px;
+      left: 18px;
+      top: 18px;
+    }
+    .nav-button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .bm-menu-wrap {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 610px) {
+   
+  }
+  
+  @media (max-width: 577px) {
+    
+    
+  }
+  
+  
+  /* Resize for small screens */
+  @media (max-width: 414px) {
+    .bm-burger-button {
+      position: fixed;
+      width: 18px;
+      height: 15px;
+      left: 18px;
+      top: 18px;
+    }
+    .nav-button {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .bm-menu-wrap {
+      width: 50%;
+    }
+    
+    
+  }
+  
+  

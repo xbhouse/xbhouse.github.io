@@ -9,3 +9,4 @@ export {default as ThemeToggle} from './ThemeToggle.js';
 export {default as Experience} from './Experience.js';
 export {default as Skill} from './Skill.js';
 export {default as SkillTable} from './Skill.js';
+export {default as BurgerNav} from './BurgerNav.js';

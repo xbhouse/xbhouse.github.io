@@ -9,22 +9,22 @@ const SocialLink = (props) => {
         image = socialImages[1];
 
     return (
-        <a 
-            href={props.link}
-            target="__blank"
-            rel="noopener noreferrer"
-        >
-            <img 
-                id={`${props.title}-icon`}
-                className="social-image" 
-                src={image} 
-                alt="social icon"
-                width={props.width}
-                height={props.width}
+        <li className="nav-item">
+            <a 
+                href={props.link}
+                target="__blank"
+                rel="noopener noreferrer"
             >
-            </img>
-        </a>
-        
+                <img 
+                    id={`${props.title}-icon`}
+                    className="social-image" 
+                    src={image} 
+                    alt="social icon"
+                    width={props.width}
+                    height={props.width}
+                />
+            </a>
+        </li>        
     )
     
 }

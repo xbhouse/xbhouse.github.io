@@ -98,7 +98,7 @@ const App = () => {
               {...props}
               title="SpaceHunt"
               images={spaceHuntImages}
-              size="30%"
+              size="40%"
               caption={spaceHuntCaption}
               description={spaceHuntDescription}
               role={spaceHuntRole}

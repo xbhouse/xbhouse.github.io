@@ -59,7 +59,6 @@ textarea {
 
 .error-toast-container, .success-toast-container {
     border: 2px solid var(--text);
-    border-radius: 25px;
 }
 
 /* Resize for medium screens */

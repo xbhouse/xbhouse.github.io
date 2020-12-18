@@ -107,6 +107,8 @@
   
   .nav-link:hover {
     color: var(--navBarHover);
+    border: 0.25px dotted var(--projectBorder);
+    transition: 900ms ease;  
   }
   
   .nav-button:focus {
@@ -133,10 +135,6 @@
     width: 100%; 
     left: 0; 
   }*/
-
-  .nav-button:hover{
-    border: 4px dotted var(--text)
-  }
 
   .github-image{
     margin-top: 10%;

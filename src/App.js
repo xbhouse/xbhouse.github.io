@@ -10,7 +10,9 @@ import {HomePage,
        ContactPage,
        ExperiencePage,
        SkillsPage} from './pages';
-import {Project, Navigation, BurgerNav, ThemeToggle} from './components';
+import {Project, 
+        BurgerNav, 
+        ThemeToggle} from './components';
 import {capstoneImages, 
         climbItImages, 
         recallTrackerImages, 
@@ -26,8 +28,7 @@ import {capstoneImages,
         capstoneRole, 
         climbItRole, 
         recallTrackerRole, 
-        spaceHuntRole} 
-from '../src/data';
+        spaceHuntRole} from '../src/data';
 
 
 const App = () => {
@@ -71,7 +72,7 @@ const App = () => {
               {...props}
               title="ClimbIt"
               images={climbItImages}
-              size="60%"
+              size="50%"
               caption={climbItCaption}
               description={climbItDescription}
               role={climbItRole}

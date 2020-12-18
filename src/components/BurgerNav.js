@@ -30,6 +30,7 @@ const BurgerNav = () => {
                 />
                 <li className="nav-item">
                     <a 
+                        title="GitHub"
                         href="https://github.com/xbhouse"
                         target="__blank"
                         rel="noopener noreferrer"
@@ -44,6 +45,7 @@ const BurgerNav = () => {
                 </li>
                 <li className="nav-item">
                     <a 
+                        title="LinkedIn"
                         href="https://linkedin.com/in/bryttaniehouse"
                         target="__blank"
                         rel="noopener noreferrer"

@@ -53,6 +53,15 @@ textarea {
     margin-bottom: 15%;
 }
 
+.success-toast-text {
+    color: black;
+}
+
+.error-toast-container, .success-toast-container {
+    border: 2px solid var(--text);
+    border-radius: 25px;
+}
+
 /* Resize for medium screens */
 @media (max-width: 720px) {
     .contact-greeting {

@@ -94,7 +94,7 @@
     border: none;
     background-color: var(--navBarBg);
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 0.15rem;
     position: relative;
     padding: 1rem;
@@ -125,7 +125,7 @@
     left: 50%;
     position: absolute;
     background: var(--navBarTextBorder);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 1.25s ease 0s, left 1.25s ease 0s;
     width: 0;
   }
 

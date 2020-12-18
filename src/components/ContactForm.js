@@ -11,7 +11,10 @@ const ContactForm = () => {
     const [buttonText, setButtonText] = useState("Submit");
 
     const sendMessage = () => {
-        const invalidInput = () => toast("That doesn't look like a valid email address :(");
+        const invalidInput = () => toast.error("That doesn't look like a valid email address :(", {
+            className: "error-toast-container",
+            bodyClassName: "error-toast-text"
+        });
 
         const data = {
             name,
@@ -40,8 +43,14 @@ const ContactForm = () => {
     }
 
     const handleSubmit = () => {
-        const success = () => toast("Thank you for your message!");
-        const invalidInput = () => toast("Please enter your name, email, and a message.");
+        const success = () => toast("Thank you for your message!", {
+            className: "success-toast-container",
+            bodyClassName: "success-toast-text"
+        });
+        const invalidInput = () => toast.error("Please enter your name, email, and a message.", {
+            className: "error-toast-container",
+            bodyClassName: "error-toast-text"
+        });
 
         if(name === "" || email === "" || message === "") {
             invalidInput();

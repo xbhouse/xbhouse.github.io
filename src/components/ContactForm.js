@@ -10,12 +10,24 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
     const [buttonText, setButtonText] = useState("Submit");
 
-    const sendMessage = () => {
-        const invalidInput = () => toast.error("That doesn't look like a valid email address :(", {
-            className: "error-toast-container",
-            bodyClassName: "error-toast-text"
-        });
+    const errorStyle = {   
+        className: "error-toast-container",
+        bodyClassName: "error-toast-text"
+    }
+    const successStyle = {   
+        className: "success-toast-container",
+        bodyClassName: "success-toast-text"
+    }
 
+    const success = () => toast("Thank you for your message!", successStyle);
+    const error = () => toast.error("Could not send message :(", errorStyle);
+    const invalidInput = () => toast.error("Please enter your name, email, and a message.", errorStyle);
+
+    const HOST = process.env.HOST || "http://127.0.0.1";
+    const PORT = "8080";
+
+    // POST message - calls emailer backend
+    const sendMessage = () => {
         const data = {
             name,
             email, 
@@ -29,12 +41,10 @@ const ContactForm = () => {
 
         return axios({
             method: "POST",
-            url: "http://127.0.0.1:5000/send_message",
+            url: `${HOST}:${PORT}/sendEmail`,
             data: data
         }).then(response => {
             console.log(response);
-            setButtonText("Submitted!");
-            handleReset();
             return response;
         }).catch(error => {
             console.log(error);
@@ -42,16 +52,8 @@ const ContactForm = () => {
         })
     }
 
+    // handle submit button
     const handleSubmit = () => {
-        const success = () => toast("Thank you for your message!", {
-            className: "success-toast-container",
-            bodyClassName: "success-toast-text"
-        });
-        const invalidInput = () => toast.error("Please enter your name, email, and a message.", {
-            className: "error-toast-container",
-            bodyClassName: "error-toast-text"
-        });
-
         if(name === "" || email === "" || message === "") {
             invalidInput();
             return;
@@ -62,15 +64,25 @@ const ContactForm = () => {
         let promise = sendMessage();
     
         if(promise) {
-            sendMessage().then(() => {
-                setTimeout(function() {handleReset(); success();}, 3000);
-            })
+            promise.then((result) => {
+                console.log(result);
+                if(result.status === 200) {
+                    success();
+                    handleReset(); 
+                }
+                else {
+                    error();
+                    handleReset();
+                }
+            }) 
         }
         else {
+            success(); // ** change this when hosted emailer actually works 
             handleReset();
         }
     }
 
+    // handle reset button
     const handleReset = () => {
         setName("");
         setEmail("");

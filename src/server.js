@@ -28,7 +28,7 @@ app.post("/sendEmail", (req, res) => {
         if(error) 
             console.log(error);
         else 
-            console.log("Server ready.");
+            console.log("Server is ready!");
     });
 
     console.log(req.body);
@@ -48,11 +48,11 @@ app.post("/sendEmail", (req, res) => {
     transporter.sendMail(mail, (error) => {
         if(error) {
             res.json({
-                status: "fail"
+                status: "you have failed"
             })
         } else {
             return res.json({
-                status: "success"
+                status: "congrats smarty pants"
             })
         }
     })
@@ -60,4 +60,4 @@ app.post("/sendEmail", (req, res) => {
 
 
 const PORT = process.env.PORT || 8080
-app.listen(PORT, () => console.info(`server has started on ${PORT}`))
+app.listen(PORT, () => console.info(`the server has started on ${PORT}`))

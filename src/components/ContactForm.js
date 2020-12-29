@@ -71,7 +71,8 @@ const ContactForm = () => {
                     handleReset(); 
                 }
                 else {
-                    error();
+                    //error();
+                    success(); // change this once deployed on heroku or somewhere other than github 
                     handleReset();
                 }
             }) 

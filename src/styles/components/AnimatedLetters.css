@@ -3,6 +3,13 @@ h1 span span, h2 span span {
     opacity: 0;
     animation: move-text 0.85s forwards;
 }
+
+/*@for $i from 1 through 7 {
+    h1 span span:nth-child(#{$i}n) {
+        color: var(--animatedText#{$i})
+    }
+}*/
+
 h1 span span:nth-child(1n) { 
     color: var(--animatedText1); 
 }
@@ -10,7 +17,7 @@ h1 span span:nth-child(2n) {
     color: var(--animatedText2); 
 }
 h1 span span:nth-child(3n) {
-     color: var(--animatedText3); 
+    color: var(--animatedText3); 
 }
 h1 span span:nth-child(4n) {
     color: var(--animatedText4); 

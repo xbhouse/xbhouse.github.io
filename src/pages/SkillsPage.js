@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-import Skill from '../components/Skill';
 import SkillTable from '../components/SkillTable';
 import {languages, 
     tools, 

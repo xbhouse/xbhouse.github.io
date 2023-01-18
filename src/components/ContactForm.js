@@ -20,7 +20,6 @@ const ContactForm = () => {
     }
 
     const success = () => toast("Thank you for your message!", successStyle);
-    const error = () => toast.error("Could not send message :(", errorStyle);
     const invalidInput = () => toast.error("Please enter your name, email, and a message.", errorStyle);
 
     const HOST = process.env.HOST || "http://127.0.0.1";

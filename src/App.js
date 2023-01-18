@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {BrowserRouter as 
+import {HashRouter as 
        Router, 
        Switch, 
        Route, 

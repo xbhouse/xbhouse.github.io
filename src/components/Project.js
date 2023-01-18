@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {BrowserRouter as Router, useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import Carousel from 'react-elastic-carousel';
 import '../styles/components/Project.css';
 

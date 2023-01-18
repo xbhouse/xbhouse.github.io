@@ -1,7 +1,5 @@
 import React, {Fragment} from 'react'; 
-import {slide as Menu} from 'react-burger-menu';
 import NavItem from '../components/NavItem.js';
-//import '../styles/components/Navigation.css';
 import SocialLink from './SocialLink.js';
 
 const Navigation = () => {

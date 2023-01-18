@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, 
+import {  
     NavLink,
     useRouteMatch 
 } from "react-router-dom"; 
 
 const ProjectListItem = (props) => {
 
-    let { path, url } = useRouteMatch();
+    let { url } = useRouteMatch();
 
     return(
         <li className="project-list-item">

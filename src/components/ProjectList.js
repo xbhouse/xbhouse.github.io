@@ -9,8 +9,12 @@ const ProjectList = () => {
             <div className="project-list-container">
                 <ul className="project-list">
                     <ProjectListItem 
+                        path="red-hat-projects"
+                        title="Red Hat projects"
+                    />
+                    <ProjectListItem 
                         path="jama-jira-plugin"
-                        title="Jama-Jira link plugin"
+                        title="Jama-Jira plugin"
                     />
                     <ProjectListItem 
                         path="climbit"

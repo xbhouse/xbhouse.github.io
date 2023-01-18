@@ -10,16 +10,14 @@ const ProjectListItem = (props) => {
 
     return(
         <li className="project-list-item">
-            
                 <button className="project-button">
-                    {props.path !== "home" && 
+                    {props.path !== "home" ? 
                         <NavLink 
                             className="project-link"
                             to={`${url}/${props.path}`}
                         >{props.title}
                         </NavLink>
-                    }
-                    {props.path === "home" && 
+                    :
                         <NavLink 
                             className="project-link"
                             to={`/${props.path}`}
@@ -27,8 +25,6 @@ const ProjectListItem = (props) => {
                         </NavLink>
                     }
                 </button>
-            
-              
         </li>
     )
 }

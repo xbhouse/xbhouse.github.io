@@ -11,24 +11,26 @@ import {HomePage,
        ExperiencePage,
        SkillsPage} from './pages';
 import {Project, 
-        BurgerNav, 
-        ThemeToggle} from './components';
+       BurgerNav, 
+       ThemeToggle} from './components';
 import {capstoneImages, 
-        climbItImages, 
-        recallTrackerImages, 
-        spaceHuntImages,
-        capstoneDescription, 
-        climbItDescription, 
-        recallTrackerDescription, 
-        spaceHuntDescription,
-        capstoneCaption, 
-        climbItCaption, 
-        recallTrackerCaption, 
-        spaceHuntCaption,
-        capstoneRole, 
-        climbItRole, 
-        recallTrackerRole, 
-        spaceHuntRole} from '../src/data';
+       climbItImages, 
+       recallTrackerImages, 
+       spaceHuntImages,
+       capstoneDescription, 
+       climbItDescription, 
+       recallTrackerDescription, 
+       spaceHuntDescription,
+       redHatProjectDescription,
+       capstoneCaption, 
+       climbItCaption, 
+       recallTrackerCaption, 
+       spaceHuntCaption,
+       redHatCaption,
+       capstoneRole, 
+       climbItRole, 
+       recallTrackerRole, 
+       spaceHuntRole} from '../src/data';
 
 
 const App = () => {
@@ -54,10 +56,20 @@ const App = () => {
 
           <Route exact path="/projects" component={ProjectPage} />
 
+          <Route exact path="/projects/red-hat-projects" render={(props) => (
+            <Project
+              {...props}
+              title="Red Hat projects"
+              caption={redHatCaption}
+              description={redHatProjectDescription}
+              repo="https://github.com/xbhouse"
+            ></Project>)} 
+          />
+
           <Route exact path="/projects/jama-jira-plugin" render={(props) => (
             <Project
               {...props}
-              title="Jama-Jira link plugin"
+              title="Jama-Jira plugin"
               images={capstoneImages}
               size="60%"
               caption={capstoneCaption}

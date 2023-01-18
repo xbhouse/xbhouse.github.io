@@ -11,20 +11,21 @@ const Project = (props) => {
             <h1 className="project-title">{props.title}</h1>
             <p className="image-caption">{props.caption}</p>
             <div className="project-image-container">
-                
-                <Carousel>
-                    {props.images.map(image => {
-                        return (
-                            <img 
-                                className="project-image" 
-                                key={image} 
-                                src={image} 
-                                alt="Screenshot of UI" 
-                                style={{width: props.size}}>
-                            </img> 
-                        )
-                    })}
-                </Carousel>
+                {props.title !== "Red Hat projects" && 
+                    <Carousel>
+                        {props.images.map(image => {
+                            return (
+                                <img 
+                                    className="project-image" 
+                                    key={image} 
+                                    src={image} 
+                                    alt="Screenshot of UI" 
+                                    style={{width: props.size}}>
+                                </img> 
+                            )
+                        })}
+                    </Carousel>
+                } 
         
             </div>
             <p className="description">{props.description}</p>

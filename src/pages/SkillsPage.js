@@ -1,8 +1,11 @@
 import React, {Fragment} from 'react';
 import SkillTable from '../components/SkillTable';
-import {languages, 
-    tools, 
-    packages} from '../data/skills';
+import {languages,  
+    frameworks,
+    systems,
+    data, 
+    databases,  
+    devops} from '../data/skills';
 import '../styles/pages/SkillsPage.css';
 
 const SkillsPage = () => {
@@ -16,14 +19,29 @@ const SkillsPage = () => {
                     skillList={languages}
                 />
                 <SkillTable 
-                    tableName="Frameworks/Libraries"
-                    styleName="packages"
-                    skillList={packages}
+                    tableName="Frameworks"
+                    styleName="frameworks"
+                    skillList={frameworks}
                 />
                 <SkillTable 
-                    tableName="Tools/Systems"
-                    styleName="tools"
-                    skillList={tools}
+                    tableName="Systems"
+                    styleName="systems"
+                    skillList={systems}
+                />
+                <SkillTable 
+                    tableName="Big Data"
+                    styleName="bigData"
+                    skillList={data}
+                />
+                <SkillTable 
+                    tableName="Databases"
+                    styleName="databases"
+                    skillList={databases}
+                />
+                <SkillTable 
+                    tableName="DevOps"
+                    styleName="devops"
+                    skillList={devops}
                 />
             </div>
         </Fragment>

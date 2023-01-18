@@ -3,7 +3,8 @@ import Experience from '../components/Experience.js';
 import {jamaRoleDescription, 
        wicsRoleDescription, 
        cdkRoleDescription, 
-       chickTechRoleDescription} from '../data/descriptions';
+       chickTechRoleDescription,
+       redHatRoleDescription} from '../data/descriptions';
 import '../styles/pages/ExperiencePage.css';
 
 const ExperiencePage = () => {
@@ -11,8 +12,16 @@ const ExperiencePage = () => {
         <Fragment>
             <h1 className="text-center exp-page-title">relevant industry experience</h1>
             <Experience 
+                position="Software Development Consultant"
+                company="Red Hat"
+                link="https://redhat.com"
+                location="Raleigh, North Carolina"
+                dates="February 2021 to Present"
+                description={redHatRoleDescription}
+            />
+            <Experience 
                 position="Student Software Engineer"
-                company="Sponsored by Jama Software"
+                company="Jama Software"
                 link="https://jamasoftware.com"
                 location="Portland, Oregon"
                 dates="July 2020 to December 2020"
@@ -23,7 +32,7 @@ const ExperiencePage = () => {
                 company="We in Computer Science (WiCS)"
                 link="https://wics.cs.pdx.edu/"
                 location="Portland, Oregon"
-                dates="October 2019 to Present"
+                dates="October 2019 to December 2020"
                 description={wicsRoleDescription}
             />
             <Experience 

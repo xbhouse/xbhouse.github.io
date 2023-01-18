@@ -10,14 +10,17 @@ export { capstoneDescription,
          jamaRoleDescription, 
          wicsRoleDescription, 
          cdkRoleDescription, 
-         chickTechRoleDescription } from './descriptions';
+         chickTechRoleDescription,
+         redHatRoleDescription,
+         redHatProjectDescription } from './descriptions';
 export { capstoneCaption, 
          climbItCaption, 
          recallTrackerCaption, 
-         spaceHuntCaption } from './captions';
+         spaceHuntCaption,
+         redHatCaption } from './captions';
 export { capstoneRole, 
          climbItRole, 
          recallTrackerRole, 
          spaceHuntRole } from './roles';
-export { languages, packages, tools } from './skills';
+export { languages, frameworks, systems, data, databases, devops } from './skills';
 

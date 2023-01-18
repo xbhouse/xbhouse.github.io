@@ -9,24 +9,12 @@ const Experience = (props) => {
                     <tbody>
                         <tr>
                             <td className="company">
-                                {props.company.startsWith("Sponsored") && 
-                                <a 
-                                    className="company-link"
-                                    href={props.link}
-                                    target="__blank"
-                                    rel="noopener noreferrer"
-                                >
-                                {props.company.split(" ").splice(-2).join(" ")}
-                                </a>}
-                                {!props.company.startsWith("Sponsored") && 
                                 <a  
                                     className="company-link"
                                     href={props.link}
                                     target="__blank"
                                     rel="noopener noreferrer"
-                                >{props.company}
-                                </a>
-                                } -- {props.location}
+                                >{props.company}</a> -- {props.location}
                             </td>
                         </tr>
                         <tr>

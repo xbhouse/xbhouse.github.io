@@ -36,18 +36,15 @@ const ContactForm = () => {
 
         if(!email.includes(".") || !email.includes("@")){
             invalidInput();
-            return;
         }
 
-        return axios({
+        else return axios({
             method: "POST",
             url: `${HOST}:${PORT}/sendEmail`,
             data: data
         }).then(response => {
-            console.log(response);
             return response;
         }).catch(error => {
-            console.log(error);
             return error;
         })
     }
@@ -71,8 +68,6 @@ const ContactForm = () => {
                     handleReset(); 
                 }
                 else {
-                    //error();
-                    success(); // change this once deployed on heroku or somewhere other than github 
                     handleReset();
                 }
             }) 
